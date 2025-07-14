@@ -6,6 +6,7 @@ import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -90,6 +91,7 @@ function App() {
       
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }
