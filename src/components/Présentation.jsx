@@ -1,8 +1,8 @@
 import profilePic from '../images/general/moiPro.jpg';
 
-function AboutMe() {
+function Présentation() {
   return (
-    <section id="apropos" className="text-white px-6 py-16 bg-neutral-800">
+    <section id="présentation" className="text-white px-6 py-16 bg-neutral-800">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center sm:items-start gap-10">
 
         {/* Photo */}
@@ -26,7 +26,7 @@ function AboutMe() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-10 text-gray-200 text-[17px] font-medium">
             <div className="flex items-center gap-3">
               <span className="text-xl">📍</span>
-              <span><strong>Location:</strong> Caen Calvados</span>
+              <span><strong>Location:</strong> Caen, Calvados</span>
             </div>
             <div className="flex items-center gap-3">
               <span className="text-xl"></span>
@@ -51,4 +51,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default Présentation;

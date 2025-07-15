@@ -9,10 +9,10 @@ import portfolio6 from '../images/projects/portfolio-6.jpg';
 import portfolio8 from '../images/projects/portfolio-8.jpg';
 import portfolio11 from '../images/projects/portfolio-11.jpg';
 
-function Projects() {
+function Projets() {
   return (
     <section
-      id="projects"
+      id="projets"
       className="w-full min-h-screen bg-neutral-800 text-white py-5 px-5 relative z-10"
     >
       <div className="max-w-6xl mx-auto">
@@ -105,4 +105,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Projets;

@@ -5,7 +5,7 @@ const Navbar = () => {
 
   const toggleMenu = () => setOpen(!open);
 
-  const navItems = ['Accueil', 'À propos', 'Projets', 'Contact'];
+  const navItems = ['Accueil', 'Présentation', 'Projets', 'Contact'];
 
   return (
     <header className="fixed top-0 w-full bg-neutral-900 text-white shadow z-50">

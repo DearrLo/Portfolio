@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #f97316;

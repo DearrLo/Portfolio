@@ -1,12 +1,13 @@
 import Navbar from './components/Navbar';
-import AboutMe from './components/AboutMe';
+import Présentation from './components/Présentation';
 import headerBg from './images/general/header-background.jpg';
 import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadFull } from "tsparticles";
 import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Projets from './components/Projets';
 import Contact from './components/Contact';
+import Footer from './components/footer';
 
 function App() {
   const particlesInit = useCallback(async (engine) => {
@@ -15,13 +16,16 @@ function App() {
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white pt-16 relative overflow-hidden">
+      {/* Ancre tout en haut pour le scroll vers #accueil */}
+      <div id="accueil" className="absolute top-0 left-0 w-0 h-0" />
+
       <Navbar />
 
       {/* Image de fond */}
       <div
-  className="fixed inset-0 bg-bottom bg-no-repeat bg-cover z-0"
-  style={{ backgroundImage: `url(${headerBg})` }}
-/>
+        className="fixed inset-0 bg-bottom bg-no-repeat bg-cover z-0"
+        style={{ backgroundImage: `url(${headerBg})` }}
+      />
 
       {/* Particules */}
       <Particles
@@ -84,14 +88,15 @@ function App() {
         </section>
       </main>
 
-      {/* SECTION ABOUT ME */}
+      {/* SECTION à propos */}
       <section className="relative z-10 bg-neutral-800">
-          <AboutMe />
+        <Présentation />
       </section>
       
       <Skills />
-      <Projects />
+      <Projets />
       <Contact />
+      <Footer />
     </div>
   );
 }
