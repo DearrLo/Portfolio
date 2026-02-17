@@ -1,12 +1,29 @@
-# React + Vite
+# Portfolio — React (Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel présentant mon profil et mes projets.  
+Application web de type **SPA** développée en **JavaScript** avec **React**, buildée avec **Vite**.
 
-Currently, two official plugins are available:
+## Stack
+- React (SPA)
+- Vite
+- JavaScript
+- HTML / CSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prérequis
+- Node.js + npm
 
-## Expanding the ESLint configuration
+## Installation & lancement en local
+- Installer les dépendances : `npm install`
+- Lancer en développement : `npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build de production
+- Générer la version de production : `npm run build`  
+- Les fichiers de production sont générés dans le dossier `dist/`.
+
+## Publication en ligne
+1. Générer le build : `npm run build` (dossier `dist/`)
+2. Publier le contenu de `dist/` sur l’hébergement web
+3. Vérifier le bon fonctionnement via l’URL publique (chargement de la page + navigation)
+
+## Mise à jour
+Régénérer le build puis remplacer la version publiée par la nouvelle.
